@@ -27,14 +27,12 @@ class Board{
 		//If the cordinates are out of bounds it will return what happend
 		//I know this can be condensed into better code relax its a personal project.
 		int placePiece(int x, int y,int turn);
-		//Check 
-		int checkWin();
 		void display();
-		int** board;
 		void restart();
-
-		//This is a terrible way to do this.  However I am doing this way.  
-		void returnValidMoves(std::vector<int*>& moves, int turn);	
+		//This is a terrible way to do this.  However I am doing this way.  80% sure there is no memory leak but we will see.
+		
+		void returnValidMoves(std::vector<int*>& moves, int turn);
+		int** board;	
 	
 		
 };

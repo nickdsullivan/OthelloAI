@@ -28,6 +28,7 @@ Board::~Board(){
 	}
 	delete board;
 }
+
 void Board::restart(){
 	for (int i = 0; i < SIDE_LENGTH; i ++){
 		for (int j = 0; j < SIDE_LENGTH; j ++){
